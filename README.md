@@ -31,14 +31,8 @@ The YouTube Video Transcript Summarizer with GenAI is an innovative tool designe
 
 To run this project, you need to install the following packages:
 
-```python
-pip install python-dotenv
-pip install streamlit
-pip install streamlit-extras
-pip install youtube-transcript-api
-pip install google-generativeai
-pip install langcodes
-pip install language_data
+```bash
+pip install -r requirements.txt
 ```
 
 <br />
@@ -49,9 +43,14 @@ To use this project, follow these steps:
 
 1. Clone the repository: ```git clone https://github.com/gopiashokan/YouTube-Video-Transcript-Summarizer-with-GenAI.git```
 2. Install the required packages: ```pip install -r requirements.txt```
-3. Add your Google API key to the `.env` file.
-4. Run the Streamlit app: ```streamlit run app.py```
-5. Access the app in your browser at ```http://localhost:8501```
+3. Create a `.env` file in the root directory (use `.env.example` as template)
+4. Add your Google API key to the `.env` file:
+   ```
+   GOOGLE_API_KEY=your_actual_api_key_here
+   ```
+   **⚠️ IMPORTANT:** Never commit your `.env` file to Git. It contains sensitive API keys.
+5. Run the Streamlit app: ```streamlit run app.py```
+6. Access the app in your browser at ```http://localhost:8501```
 
 <br />
 
